@@ -1,0 +1,170 @@
+# Dr. Lisa Simon Website - Technical Overview
+
+## Project Summary
+Professional Hebrew website for Dr. Lisa Simon, a clinical psychologist. Single-page scrolling layout with tab-based navigation.
+
+## Tech Stack
+
+### Frontend
+- **Framework:** Next.js 15+ (App Router, TypeScript)
+- **Styling:** Tailwind CSS v4
+- **Language:** Hebrew (RTL)
+- **Font:** Heebo (Google Fonts, weights: 300, 400, 500, 600, 700)
+
+### Backend
+- **Database:** Supabase (Postgres)
+- **API:** Next.js API Routes (`/app/api/contact/route.ts`)
+- **Form Handling:** react-hook-form + zod validation
+
+### Deployment
+- **Platform:** Vercel
+- **Build:** Static generation for main page, dynamic API route
+
+## Project Structure
+```
+/app
+  ├── layout.tsx          # Root layout (RTL, Heebo font, SEO metadata)
+  ├── page.tsx            # Main page (all sections)
+  ├── globals.css         # Tailwind config, color palette, smooth scroll
+  └── api/contact/route.ts # Form submission endpoint
+
+/components
+  ├── Navigation.tsx      # Sticky tab navigation with active state
+  ├── ScrollSection.tsx   # Section wrapper for smooth scroll anchoring
+  └── ContactForm.tsx     # Contact form with validation
+
+/sections
+  ├── HomeSection.tsx     # Hero/intro
+  ├── TherapySection.tsx  # Therapy services
+  ├── AboutSection.tsx    # About Dr. Simon
+  ├── AcademicSection.tsx # Research background
+  ├── LecturesSection.tsx # Public lectures
+  └── ContactSection.tsx  # Contact info + form
+
+/lib
+  ├── supabase.ts         # Supabase client initialization
+  └── contactSchema.ts    # Zod validation schema for contact form
+
+/context
+  ├── technical-overview.md # This file
+  └── product-brief.md      # Product requirements
+```
+
+## Key Features
+
+### RTL Support
+- `dir="rtl"` on `<html>` element
+- Hebrew language (`lang="he"`)
+- Tailwind RTL-aware utilities
+- Line-height optimized for Hebrew: 1.75 for body, 1.3 for headings
+
+### Navigation
+- 6 tabs: בית, טיפול, אודות, מחקר, הרצאות, יצירת קשר
+- Smooth scroll to anchored sections
+- Active state detection on scroll
+- Mobile: hamburger menu with slide-down animation
+
+### Contact Form
+- Fields: name, email, phone (optional), message
+- Client-side validation with Zod
+- Hebrew error messages
+- API route validates and inserts to Supabase
+- Success/error states with auto-dismiss
+
+### Design System
+
+**Color Palette:**
+- Background: `#fafaf8` (off-white/cream)
+- Foreground: `#2d2d2d` (dark charcoal)
+- Primary: `#e5dfd5` (warm beige)
+- Accent: `#7fa99b` (muted teal/sage)
+
+**Typography:**
+- Font: Heebo
+- Body: 16-18px, line-height 1.75
+- Headings: Responsive scale, line-height 1.3
+
+**Spacing:**
+- Consistent vertical rhythm
+- Section padding: large (py-20 on desktop)
+- Content max-width: 6xl (1280px)
+
+## Database Schema
+
+**Table:** `contact_submissions`
+```sql
+CREATE TABLE contact_submissions (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  phone TEXT,
+  message TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT NOW() NOT NULL
+);
+```
+
+**Row Level Security:**
+- Public can INSERT (submit forms)
+- Public cannot SELECT (read submissions)
+
+## Environment Variables
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://knxkgozewbctebuufmno.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_CX1TS4nhZcIdW_0ad77nQg_2A0CT20W
+```
+
+*Note: These are in `.env.local` (gitignored)*
+
+## Accessibility
+
+- WCAG AA compliant
+- Semantic HTML (`<nav>`, `<main>`, `<section>`)
+- ARIA labels throughout
+- Skip-to-content link
+- Form error announcements
+- Keyboard navigation support
+- Focus-visible states
+
+## SEO
+
+- Hebrew meta tags
+- OpenGraph support (locale: `he_IL`)
+- Static pre-rendering
+- Semantic heading hierarchy
+
+## Performance
+
+- Static generation for main page
+- Lazy loading for images (when added)
+- Optimized Tailwind CSS (purged)
+- Fast build times (~1.5s)
+
+## Important Constraints
+
+1. **All visible content must be in Hebrew**
+2. **Full RTL support required**
+3. **Single-page layout** (no separate routes except API)
+4. **No authentication** (public site)
+5. **Minimal design** (calm, professional, not flashy)
+
+## Development Commands
+```bash
+npm run dev        # Development server (localhost:3000)
+npm run build      # Production build
+npm run lint       # ESLint check
+```
+
+## Deployment
+
+- Platform: Vercel
+- Auto-deploys from Git
+- Environment variables configured in Vercel dashboard
+
+## Future Enhancements (Not Yet Implemented)
+
+- Real images (currently placeholders)
+- Final content copy (currently Hebrew placeholders)
+- Google Analytics
+- Blog section
+- Custom domain
+- Image optimization

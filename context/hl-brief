@@ -1,0 +1,186 @@
+# High-Level Website Brief – Dr. Lisa Simon
+
+## Purpose of This Document
+
+This document serves as **context and a guiding brief** for building a new professional website for **Dr. Lisa Simon**, a psychologist. It is intended to be shared with AI tools (e.g., Cursor, Claude, etc.) and possibly human collaborators.
+
+* **This document is written in English** and should remain so.
+* **All actual website content must be in Hebrew**.
+* The website must fully support **Hebrew language and RTL (right-to-left) layout**.
+
+The goal is to define *what the website is*, *who it is for*, and *what it should communicate*, without getting into implementation-level details yet.
+
+---
+
+## High-Level Goals
+
+1. Create a **beautiful, calm, professional, and trustworthy** website for a clinical psychologist.
+2. Balance two identities:
+
+   * **Clinical practice** (private clinic, therapy services)
+   * **Academic & research background** (credibility, thought leadership)
+3. Invite potential patients to feel **safe, understood, and confident** in reaching out.
+4. Position Dr. Simon as a **serious, experienced professional**, without feeling cold or overly academic.
+5. Ensure the site feels modern, minimal, and intentional — not generic or templated.
+
+---
+
+## Target Audiences
+
+### Primary Audience
+
+* Adults in Israel seeking psychological therapy
+* Individuals  looking for a psychologist they can trust
+* Visitors who may be emotionally sensitive or hesitant when arriving at the site
+* people looking to invite Dr Lisa Simon to give a lecture from a portfolio of topics
+
+### Secondary Audience
+
+* Academic peers
+* Institutions, clinics, or collaborators
+* Students or professionals interested in Dr. Simon’s research and academic background
+
+---
+
+## Core Positioning
+
+Dr. Lisa Simon should be perceived as:
+
+* Warm, empathetic, and human
+* Highly professional and experienced
+* Academically grounded and research-oriented
+* Calm, thoughtful, and reflective
+* Clear and articulate, without being intimidating
+
+The website should **reduce friction and anxiety** for potential patients, while also conveying **depth and credibility**.
+
+---
+
+## Website Tone & Emotional Feel
+
+The emotional tone should be:
+
+* Calm
+* Soft
+* Reassuring
+* Thoughtful
+* Professional, but not corporate
+
+Avoid:
+
+* Aggressive marketing language
+* Overly clinical or diagnostic phrasing
+* Flashy visuals or gimmicks
+
+---
+
+## Visual & Design Direction
+
+### General Style
+
+* Minimalist
+* Elegant
+* Plenty of white space
+* Soft typography
+* Subtle transitions and motion (if any)
+
+### Reference Inspiration
+
+* Visual and structural inspiration: [https://www.momizisquit.com/](https://www.momizisquit.com/)
+* Key takeaways from the reference site:
+
+  * Clean layout
+  * Strong typography
+  * Clear hierarchy
+  * Calm, confident presence
+
+The goal is **inspiration, not imitation**.
+
+---
+
+## Content Structure (High-Level)
+
+The exact IA can evolve, but the site should likely include:
+
+1. **Homepage**
+
+   * Clear introduction to who Dr. Lisa Simon is
+   * A short, calming value proposition
+   * Gentle invitation to explore therapy or background
+
+2. **Clinic / Therapy Section**
+
+   * Who therapy is for
+   * General therapeutic approach (high-level, accessible language)
+   * Practical details (location, how to reach out)
+
+3. **About Dr. Lisa Simon**
+
+   * Professional background
+   * Personal tone, human presence
+   * Values and philosophy
+
+4. **Academic & Research Experience**
+
+   * Education
+   * Research areas
+   * Publications / affiliations (high-level)
+   * Written for credibility, not promotion
+
+5. **Contact / Reach Out**
+
+   * Simple, non-intimidating
+   * Emphasis on safety and discretion
+   * Clear call to action without pressure
+
+---
+
+## Language & Localization Requirements
+
+* **All visible website content must be in Hebrew**
+* **Full RTL support is mandatory**
+* Typography must work well in Hebrew
+* Layouts must be designed *for RTL first*, not mirrored LTR designs
+
+This is not a bilingual site at this stage — Hebrew is the primary and only language.
+
+---
+
+## Accessibility & Sensitivity
+
+* Language should be inclusive and non-judgmental
+* Avoid assumptions about the visitor’s mental state
+* Use simple, clear wording
+* Ensure readability and visual calm
+
+---
+
+## Non-Goals (Important)
+
+* No aggressive SEO-driven content stuffing
+* No blog or content marketing strategy at this stage (unless added later)
+* No online scheduling or complex systems initially
+* No stock-photo-heavy or cliché therapy imagery
+
+---
+
+## Success Criteria
+
+The website is successful if:
+
+* A first-time visitor feels calm and understood
+* A potential patient feels comfortable reaching out
+* An academic visitor perceives strong professional credibility
+* The site feels timeless and not trend-dependent
+
+---
+
+## Notes for Future AI / Dev Tools
+
+* This document defines **intent and context**, not implementation
+* Visual, UX, and technical decisions should align with this brief
+* Any generated copy must be **in Hebrew**, but guided by this English brief
+
+---
+
+End of brief.
