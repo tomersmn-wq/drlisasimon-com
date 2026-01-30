@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server'
 import { supabaseAdmin } from '@/lib/supabase'
 import { contactFormSchema } from '@/lib/contactSchema'
 
+// Force this route to be dynamic (not evaluated at build time)
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: Request) {
   try {
     const body = await request.json()
