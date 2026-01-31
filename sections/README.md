@@ -5,7 +5,7 @@ The `sections` folder contains the main content blocks that make up the homepage
 
 ## Intended Purpose
 Sections organize the homepage into logical content areas:
-- **HomeSection** (`HomeSection.tsx`): The hero/introduction section at the top
+- **HomeSection** (`HomeSection.tsx`): Hero section with split layout - abstract portrait visual + name/credentials
 - **TherapySection** (`TherapySection.tsx`): Information about therapy services
 - **AboutSection** (`AboutSection.tsx`): About the doctor
 - **AcademicSection** (`AcademicSection.tsx`): Academic credentials and research
@@ -24,7 +24,7 @@ Editing `TherapySection.tsx` will change how therapy services are presented to p
 Changing the order in which sections are imported in `page.tsx` will rearrange the homepage layout, potentially changing user engagement patterns and information hierarchy.
 
 ## Key Files
-- `HomeSection.tsx` - Hero/intro section
+- `HomeSection.tsx` - Split-screen hero: abstract portrait silhouette + professional info
 - `TherapySection.tsx` - Therapy services information
 - `AboutSection.tsx` - About section
 - `AcademicSection.tsx` - Academic credentials

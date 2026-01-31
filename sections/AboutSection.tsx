@@ -8,6 +8,13 @@ export default function AboutSection() {
           אודות
         </h2>
 
+        {/* Profile Image - Centered at top of section */}
+        <div className="flex justify-center mt-8 mb-12">
+          <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-full shadow-lg flex items-center justify-center text-gray-500 overflow-hidden" role="img" aria-label="תמונת פרופיל">
+            [תמונת פרופיל]
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-10 mt-12">
           <div className="md:col-span-2 space-y-6">
             <p className="text-base md:text-lg text-foreground">
@@ -25,9 +32,6 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="w-full h-64 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center text-gray-500" role="img" aria-label="מקום לתמונה נוספת">
-              [תמונה נוספת]
-            </div>
             <div className="bg-primary/50 p-6 rounded-lg">
               <h3 className="text-xl md:text-2xl font-semibold text-text-dark mb-4">השכלה והסמכות</h3>
               <ul className="space-y-3 text-base text-foreground" role="list">
