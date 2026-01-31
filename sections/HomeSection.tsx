@@ -2,87 +2,6 @@ import ScrollSection from '@/components/ScrollSection'
 
 export default function HomeSection() {
   return (
-<<<<<<< Current (Your changes)
-    <ScrollSection id="home" className="flex items-center justify-center relative overflow-hidden">
-      <div className="w-full max-w-5xl">
-        <div className="flex flex-col items-center justify-center gap-8 md:gap-12 lg:gap-16">
-          {/* Abstract Illustration Area - Centered above text */}
-          <div className="relative w-full flex items-center justify-center">
-            <div className="w-full max-w-lg h-[300px] md:h-[400px] lg:h-[450px]">
-              <svg
-                viewBox="0 0 800 500"
-                className="w-full h-full"
-                style={{ maxWidth: '100%', height: 'auto' }}
-                aria-hidden="true"
-              >
-                {/* Soft background shapes */}
-                <ellipse cx="400" cy="250" rx="350" ry="200" fill="#e5dfd5" opacity="0.3" />
-                <ellipse cx="450" cy="300" rx="250" ry="150" fill="#7fa99b" opacity="0.15" />
-                
-                {/* Abstract plant/leaves */}
-                <path
-                  d="M 650 380 Q 670 350 680 320 Q 685 300 683 280"
-                  stroke="#7fa99b"
-                  strokeWidth="3"
-                  fill="none"
-                  opacity="0.7"
-                />
-                <ellipse cx="688" cy="275" rx="15" ry="25" fill="#7fa99b" opacity="0.6" transform="rotate(-15 688 275)" />
-                <ellipse cx="675" cy="295" rx="12" ry="22" fill="#7fa99b" opacity="0.6" transform="rotate(20 675 295)" />
-                <ellipse cx="695" cy="305" rx="13" ry="24" fill="#7fa99b" opacity="0.6" transform="rotate(-10 695 305)" />
-
-                {/* Minimalist couch/seating representation */}
-                <g opacity="0.8">
-                  {/* Couch base */}
-                  <rect x="200" y="320" width="300" height="15" rx="8" fill="none" stroke="#2d2d2d" strokeWidth="2.5" />
-                  {/* Couch back */}
-                  <path
-                    d="M 220 240 L 220 320 M 480 240 L 480 320"
-                    stroke="#2d2d2d"
-                    strokeWidth="2.5"
-                    strokeLinecap="round"
-                  />
-                  <path
-                    d="M 220 240 Q 350 230 480 240"
-                    stroke="#2d2d2d"
-                    strokeWidth="2.5"
-                    fill="none"
-                    strokeLinecap="round"
-                  />
-                  {/* Cushions */}
-                  <ellipse cx="300" cy="305" rx="35" ry="15" fill="#e5dfd5" opacity="0.8" />
-                  <ellipse cx="400" cy="305" rx="35" ry="15" fill="#e5dfd5" opacity="0.8" />
-                </g>
-
-                {/* Small table with book */}
-                <g opacity="0.75">
-                  <ellipse cx="150" cy="360" rx="45" ry="25" fill="none" stroke="#2d2d2d" strokeWidth="2" />
-                  <line x1="150" y1="360" x2="150" y2="400" stroke="#2d2d2d" strokeWidth="2" />
-                  <rect x="135" y="335" width="30" height="5" rx="2" fill="#7fa99b" opacity="0.6" />
-                </g>
-
-                {/* Flowing wave line at bottom */}
-                <path
-                  d="M 0 450 Q 200 430 400 450 T 800 450"
-                  stroke="#7fa99b"
-                  strokeWidth="2"
-                  fill="none"
-                  opacity="0.4"
-                />
-              </svg>
-            </div>
-          </div>
-
-          {/* Text Content - Centered below image */}
-          <div className="w-full flex flex-col justify-center items-center space-y-4 md:space-y-6 text-center">
-            <div className="space-y-3 md:space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-text-dark leading-tight">
-                ד״ר ליסה סיימון
-              </h1>
-              <p className="text-lg md:text-xl lg:text-2xl text-accent/80 font-light">
-                פסיכולוגית קלינית
-              </p>
-=======
     <ScrollSection id="home" className="flex items-center relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 lg:px-8">
         {/* Split Layout - Image/Visual on Left, Content on Right */}
@@ -195,7 +114,6 @@ export default function HomeSection() {
                 </svg>
                 <span>מומחית קלינית מוסמכת</span>
               </div>
->>>>>>> Incoming (Background Agent changes)
             </div>
           </div>
         </div>
