@@ -15,8 +15,8 @@ export default function Home() {
       <Navigation />
       <main id="main-content">
         <HomeSection />
-        <TherapySection />
         <AboutSection />
+        <TherapySection />
         <AcademicSection />
         <LecturesSection />
         <ContactSection />
