@@ -108,14 +108,6 @@ export default function HomeSection() {
               <p className="text-lg md:text-xl text-text-dark/70 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
                 מלווה אנשים במסע של צמיחה אישית והבנה עצמית עמוקה
               </p>
-              
-              {/* Optional credentials badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                </svg>
-                <span>מומחית קלינית מוסמכת</span>
-              </div>
             </div>
           </div>
         </div>
