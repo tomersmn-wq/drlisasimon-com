@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <ScrollSection id="about">
       <div className="space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-dark text-center">
+        <h2 id="about-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
           אודות
         </h2>
 

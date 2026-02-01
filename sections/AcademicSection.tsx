@@ -4,7 +4,7 @@ export default function AcademicSection() {
   return (
     <ScrollSection id="academic" className="bg-primary/30">
       <div className="space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-dark text-center">
+        <h2 id="academic-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
           מחקר אקדמי
         </h2>
 

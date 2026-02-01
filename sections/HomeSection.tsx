@@ -11,7 +11,7 @@ export default function HomeSection() {
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <div className="relative w-full max-w-md aspect-square">
               {/* Background decorative circles */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
                 <div className="w-[85%] h-[85%] rounded-full bg-primary/40 blur-2xl"></div>
               </div>
               
@@ -21,6 +21,8 @@ export default function HomeSection() {
                   viewBox="0 0 400 400"
                   className="w-full h-full"
                   preserveAspectRatio="xMidYMid meet"
+                  role="img"
+                  aria-label="איור דקורטיבי של דמות פסיכולוגית עם אלמנטים צמחיים"
                 >
                   {/* Organic background shape */}
                   <circle cx="200" cy="200" r="180" fill="#e5dfd5" opacity="0.6" />
@@ -89,7 +91,7 @@ export default function HomeSection() {
 
             {/* Main heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-dark leading-tight">
+              <h1 id="home-heading" className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-dark leading-tight">
                 ד״ר ליסה סיימון
               </h1>
               
@@ -109,7 +111,7 @@ export default function HomeSection() {
               
               {/* Optional credentials badge */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent text-sm">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                   <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
                 </svg>
                 <span>מומחית קלינית מוסמכת</span>

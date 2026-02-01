@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import "./globals.css";
+import { AccessibilityProvider } from "@/context/AccessibilityContext";
+import FontSizeControl from "@/components/FontSizeControl";
 
 const heebo = Heebo({
   variable: "--font-heebo",
@@ -29,9 +31,12 @@ export default function RootLayout({
   return (
     <html lang="he" dir="rtl" suppressHydrationWarning>
       <body
-        className={`${heebo.variable} antialiased`}
+        className={`${heebo.variable} antialiased font-size-default`}
       >
-        {children}
+        <AccessibilityProvider>
+          {children}
+          <FontSizeControl />
+        </AccessibilityProvider>
       </body>
     </html>
   );

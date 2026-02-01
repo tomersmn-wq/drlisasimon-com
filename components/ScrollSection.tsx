@@ -11,6 +11,7 @@ export default function ScrollSection({ id, children, className = '' }: ScrollSe
     <section
       id={id}
       className={`min-h-screen py-20 px-6 md:px-12 lg:px-24 scroll-mt-20 ${className}`}
+      aria-labelledby={`${id}-heading`}
     >
       <div className="max-w-6xl mx-auto">
         {children}

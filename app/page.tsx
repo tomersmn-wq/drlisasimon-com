@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import HomeSection from '@/sections/HomeSection'
 import TherapySection from '@/sections/TherapySection'
 import AboutSection from '@/sections/AboutSection'
@@ -21,6 +22,7 @@ export default function Home() {
         <LecturesSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   )
 }

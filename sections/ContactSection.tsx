@@ -5,7 +5,7 @@ export default function ContactSection() {
   return (
     <ScrollSection id="contact" className="bg-primary/30">
       <div className="space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-dark text-center">
+        <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
           יצירת קשר
         </h2>
 

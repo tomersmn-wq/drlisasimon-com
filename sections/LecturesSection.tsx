@@ -4,7 +4,7 @@ export default function LecturesSection() {
   return (
     <ScrollSection id="lectures">
       <div className="space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-dark text-center">
+        <h2 id="lectures-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
           הרצאות והדרכות
         </h2>
 
@@ -17,19 +17,19 @@ export default function LecturesSection() {
             <h3 className="text-2xl md:text-3xl font-semibold text-accent">נושאי הרצאות</h3>
             <ul className="space-y-4 text-foreground" role="list">
               <li className="bg-white p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-text-dark mb-2 text-lg">ניהול מתח וחרדה בחיי היומיום</h4>
+                <h3 className="font-semibold text-text-dark mb-2 text-lg">ניהול מתח וחרדה בחיי היומיום</h3>
                 <p className="text-sm md:text-base">כלים פרקטיים להתמודדות עם לחץ וחרדה, טכניקות הרפיה ומיינדפולנס</p>
               </li>
               <li className="bg-white p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-text-dark mb-2 text-lg">בניית חוסן נפשי</h4>
+                <h3 className="font-semibold text-text-dark mb-2 text-lg">בניית חוסן נפשי</h3>
                 <p className="text-sm md:text-base">כיצד לפתח יכולת התמודדות עם משברים ושינויים</p>
               </li>
               <li className="bg-white p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-text-dark mb-2 text-lg">תקשורת בריאה במערכות יחסים</h4>
+                <h3 className="font-semibold text-text-dark mb-2 text-lg">תקשורת בריאה במערכות יחסים</h3>
                 <p className="text-sm md:text-base">עקרונות לתקשורת אפקטיבית ובניית קשרים בריאים</p>
               </li>
               <li className="bg-white p-5 rounded-lg shadow-sm">
-                <h4 className="font-semibold text-text-dark mb-2 text-lg">הורות מודעת</h4>
+                <h3 className="font-semibold text-text-dark mb-2 text-lg">הורות מודעת</h3>
                 <p className="text-sm md:text-base">כלים פסיכולוגיים להורים לגידול ילדים מאוזנים ומאושרים</p>
               </li>
             </ul>

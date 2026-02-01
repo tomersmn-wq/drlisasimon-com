@@ -4,7 +4,7 @@ export default function TherapySection() {
   return (
     <ScrollSection id="therapy" className="bg-primary/30">
       <div className="space-y-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-text-dark text-center">
+        <h2 id="therapy-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
           טיפול פסיכולוגי
         </h2>
         
