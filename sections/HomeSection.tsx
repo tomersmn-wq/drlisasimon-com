@@ -5,11 +5,11 @@ export default function HomeSection() {
     <ScrollSection id="home" className="flex items-center relative overflow-hidden">
       <div className="w-full max-w-7xl mx-auto px-4 lg:px-8">
         {/* Split Layout - Image/Visual on Left, Content on Right */}
-        <div className="relative min-h-[85vh] flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-12 lg:py-0">
+        <div className="relative min-h-[85vh] flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 xl:gap-24 py-12 lg:py-0">
           
           {/* Visual Side - Abstract Portrait/Silhouette */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center">
-            <div className="relative w-full max-w-md aspect-square">
+          <div className="w-full lg:w-auto lg:flex-shrink-0 flex items-center justify-center">
+            <div className="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md xl:max-w-lg aspect-square">
               {/* Background decorative circles */}
               <div className="absolute inset-0 flex items-center justify-center" aria-hidden="true">
                 <div className="w-[85%] h-[85%] rounded-full bg-primary/40 blur-2xl"></div>
@@ -78,9 +78,9 @@ export default function HomeSection() {
           </div>
 
           {/* Content Side */}
-          <div className="w-full lg:w-1/2 space-y-8 text-center lg:text-right">
+          <div className="w-full lg:max-w-xl xl:max-w-2xl space-y-6 lg:space-y-8 text-center lg:text-right lg:flex-shrink-0">
             {/* Small decorative element */}
-            <div className="flex items-center justify-center lg:justify-end gap-2 mb-4">
+            <div className="flex items-center justify-center lg:justify-end gap-2 mb-3 lg:mb-4">
               <div className="w-12 h-px bg-accent/30"></div>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-accent opacity-50">
                 <circle cx="12" cy="12" r="8" stroke="currentColor" strokeWidth="1.5" />
@@ -90,13 +90,13 @@ export default function HomeSection() {
             </div>
 
             {/* Main heading */}
-            <div className="space-y-4">
-              <h1 id="home-heading" className="text-5xl md:text-6xl lg:text-7xl font-bold text-text-dark leading-tight">
+            <div className="space-y-3 lg:space-y-4">
+              <h1 id="home-heading" className="text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-bold text-text-dark leading-tight">
                 ד״ר ליסה סיימון
               </h1>
               
               <div className="space-y-2">
-                <p className="text-2xl md:text-3xl text-accent font-light tracking-wide">
+                <p className="text-2xl md:text-3xl lg:text-2xl xl:text-3xl text-accent font-light tracking-wide">
                   פסיכולוגית קלינית
                 </p>
                 <div className="w-24 h-px bg-accent/40 mx-auto lg:mr-0"></div>
@@ -104,8 +104,8 @@ export default function HomeSection() {
             </div>
 
             {/* Tagline/Description */}
-            <div className="space-y-4 pt-4">
-              <p className="text-lg md:text-xl text-text-dark/70 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
+            <div className="space-y-4 pt-2 lg:pt-4">
+              <p className="text-lg md:text-xl lg:text-lg xl:text-xl text-text-dark/70 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
                 מלווה אנשים במסע של צמיחה אישית והבנה עצמית עמוקה
               </p>
             </div>
