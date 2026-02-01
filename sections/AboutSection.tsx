@@ -1,4 +1,5 @@
 import ScrollSection from '@/components/ScrollSection'
+import Image from 'next/image'
 
 export default function AboutSection() {
   return (
@@ -10,8 +11,15 @@ export default function AboutSection() {
 
         {/* Profile Image - Centered at top of section */}
         <div className="flex justify-center mt-8 mb-12">
-          <div className="w-64 h-64 md:w-80 md:h-80 bg-gray-200 rounded-full shadow-lg flex items-center justify-center text-gray-500 overflow-hidden" role="img" aria-label="תמונת פרופיל">
-            [תמונת פרופיל]
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full shadow-2xl overflow-hidden ring-4 ring-primary/30">
+            <Image 
+              src="/images/lisa-profile.jpg"
+              alt="ד״ר ליסה סיימון - תמונת פרופיל"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 288px, 384px"
+            />
           </div>
         </div>
 
