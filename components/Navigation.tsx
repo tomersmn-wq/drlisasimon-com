@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 
 const navItems = [
   { id: 'home', label: 'בית', href: '#home' },
-  { id: 'therapy', label: 'טיפול', href: '#therapy' },
   { id: 'about', label: 'אודות', href: '#about' },
+  { id: 'therapy', label: 'טיפול', href: '#therapy' },
   { id: 'academic', label: 'מחקר', href: '#academic' },
   { id: 'lectures', label: 'הרצאות', href: '#lectures' },
   { id: 'contact', label: 'יצירת קשר', href: '#contact' },
