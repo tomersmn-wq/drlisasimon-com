@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { contactFormSchema, type ContactFormData } from '@/lib/contactSchema'
@@ -9,6 +9,16 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
+
+  // Auto-hide success message after 5 seconds with proper cleanup
+  useEffect(() => {
+    if (success) {
+      const timeoutId = setTimeout(() => {
+        setSuccess(false)
+      }, 5000)
+      return () => clearTimeout(timeoutId)
+    }
+  }, [success])
 
   const {
     register,
@@ -35,12 +45,8 @@ export default function ContactForm() {
 
       setSuccess(true)
       reset() // Clear form
-
-      // Auto-hide success message after 5 seconds
-      setTimeout(() => {
-        setSuccess(false)
-      }, 5000)
     } catch (err) {
+      console.error('Contact form submission error:', err)
       setError('אירעה שגיאה. אנא נסה שוב')
     } finally {
       setIsSubmitting(false)

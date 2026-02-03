@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CONTACT_INFO } from '@/lib/config'
 
 export default function Footer() {
   return (
@@ -45,16 +46,16 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-text-dark mb-3">יצירת קשר</h2>
             <ul className="space-y-2 text-sm text-foreground" role="list">
               <li>
-                <a href="mailto:dr.lisa@example.com" className="hover:text-accent transition-colors">
-                  dr.lisa@example.com
+                <a href={`mailto:${CONTACT_INFO.email}`} className="hover:text-accent transition-colors">
+                  {CONTACT_INFO.email}
                 </a>
               </li>
               <li>
-                <a href="tel:050-123-4567" className="hover:text-accent transition-colors">
-                  050-123-4567
+                <a href={`tel:${CONTACT_INFO.phone}`} className="hover:text-accent transition-colors">
+                  {CONTACT_INFO.phone}
                 </a>
               </li>
-              <li>רחוב הרצל 123, תל אביב</li>
+              <li>{CONTACT_INFO.address}</li>
             </ul>
           </div>
         </div>

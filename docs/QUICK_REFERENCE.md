@@ -7,9 +7,29 @@
 - **Email Logs**: https://resend.com/emails
 
 ## Environment Variables
+
+### Required
 ```bash
-RESEND_API_KEY=re_xxx       # From resend.com/api-keys
-CONTACT_EMAIL_TO=xxx        # Your email address
+# Supabase (Database)
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+
+# Email (Resend)
+RESEND_API_KEY=re_xxx                    # From resend.com/api-keys
+CONTACT_EMAIL_TO=your-email@example.com  # Where to receive form submissions
+```
+
+### Optional (Contact Info)
+```bash
+# Public contact information displayed on the site
+NEXT_PUBLIC_CONTACT_EMAIL=dr.lisa@example.com
+NEXT_PUBLIC_CONTACT_PHONE=050-123-4567
+NEXT_PUBLIC_CONTACT_ADDRESS=רחוב הרצל 123, תל אביב
+NEXT_PUBLIC_CONTACT_HOURS=ימים א׳-ה׳, 9:00-19:00
+
+# Custom email sender (after domain verification)
+EMAIL_FROM=Contact Form <noreply@yourdomain.com>
 ```
 
 ## Key Files

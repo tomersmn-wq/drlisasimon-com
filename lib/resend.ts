@@ -28,7 +28,7 @@ export function getResendClient(): Resend {
  * Configuration for contact form emails
  */
 export const EMAIL_CONFIG = {
-  from: 'Contact Form <onboarding@resend.dev>', // Update this after domain verification
+  from: process.env.EMAIL_FROM || 'Contact Form <onboarding@resend.dev>',
   subject: 'הודעה חדשה מטופס יצירת קשר - אתר ד״ר ליסה',
 } as const
 

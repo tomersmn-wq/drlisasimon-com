@@ -1,5 +1,6 @@
 import ScrollSection from '@/components/ScrollSection'
 import ContactForm from '@/components/ContactForm'
+import { CONTACT_INFO } from '@/lib/config'
 
 export default function ContactSection() {
   return (
@@ -20,8 +21,8 @@ export default function ContactSection() {
                 <div className="text-accent text-2xl" aria-hidden="true">📧</div>
                 <div>
                   <h3 className="font-semibold text-text-dark text-lg mb-1">אימייל</h3>
-                  <a href="mailto:dr.lisa@example.com" className="text-foreground hover:text-accent transition-colors">
-                    dr.lisa@example.com
+                  <a href={`mailto:${CONTACT_INFO.email}`} className="text-foreground hover:text-accent transition-colors">
+                    {CONTACT_INFO.email}
                   </a>
                 </div>
               </div>
@@ -30,8 +31,8 @@ export default function ContactSection() {
                 <div className="text-accent text-2xl" aria-hidden="true">📞</div>
                 <div>
                   <h3 className="font-semibold text-text-dark text-lg mb-1">טלפון</h3>
-                  <a href="tel:050-123-4567" className="text-foreground hover:text-accent transition-colors">
-                    050-123-4567
+                  <a href={`tel:${CONTACT_INFO.phone}`} className="text-foreground hover:text-accent transition-colors">
+                    {CONTACT_INFO.phone}
                   </a>
                 </div>
               </div>
@@ -40,7 +41,7 @@ export default function ContactSection() {
                 <div className="text-accent text-2xl" aria-hidden="true">📍</div>
                 <div>
                   <h3 className="font-semibold text-text-dark text-lg mb-1">כתובת</h3>
-                  <p className="text-foreground">רחוב הרצל 123, תל אביב</p>
+                  <p className="text-foreground">{CONTACT_INFO.address}</p>
                 </div>
               </div>
 
@@ -48,7 +49,7 @@ export default function ContactSection() {
                 <div className="text-accent text-2xl" aria-hidden="true">🕐</div>
                 <div>
                   <h3 className="font-semibold text-text-dark text-lg mb-1">שעות פעילות</h3>
-                  <p className="text-foreground">ימים א׳-ה׳, 9:00-19:00</p>
+                  <p className="text-foreground">{CONTACT_INFO.hours}</p>
                 </div>
               </div>
             </div>

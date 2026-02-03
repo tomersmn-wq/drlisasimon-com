@@ -3,6 +3,7 @@ import { supabaseAdmin } from '@/lib/supabase'
 import { contactFormSchema } from '@/lib/contactSchema'
 import { getResendClient, getContactEmailTo, EMAIL_CONFIG, validateEmailConfig } from '@/lib/resend'
 import ContactFormEmail from '@/lib/emails/ContactFormEmail'
+import { logger } from '@/lib/logger'
 
 // Force this route to be dynamic (not evaluated at build time)
 export const dynamic = 'force-dynamic'
@@ -21,7 +22,7 @@ export async function POST(request: Request) {
       .select()
     
     if (error) {
-      console.error('Supabase error:', error)
+      logger.error('Supabase error', error, { data: validatedData })
       return NextResponse.json(
         { error: 'Failed to submit form' },
         { status: 500 }
@@ -56,14 +57,14 @@ export async function POST(request: Request) {
       
       if (emailResult.error) {
         // Log email error but don't fail the request
-        console.error('Email sending failed:', emailResult.error)
+        logger.error('Email sending failed', emailResult.error)
       } else {
-        console.log('Email sent successfully:', emailResult.data?.id)
+        logger.info('Email sent successfully', { emailId: emailResult.data?.id })
       }
     } catch (emailError) {
       // Log email error but don't fail the request
       // The form data is already saved in Supabase
-      console.error('Email notification error:', emailError)
+      logger.error('Email notification error', emailError)
     }
     
     return NextResponse.json(
@@ -71,7 +72,7 @@ export async function POST(request: Request) {
       { status: 201 }
     )
   } catch (error) {
-    console.error('API error:', error)
+    logger.error('API error', error)
     return NextResponse.json(
       { error: 'Invalid request' },
       { status: 400 }
