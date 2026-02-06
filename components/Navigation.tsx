@@ -6,6 +6,7 @@ const navItems = [
   { id: 'home', label: 'בית', href: '#home' },
   { id: 'about', label: 'אודות', href: '#about' },
   { id: 'therapy', label: 'טיפול', href: '#therapy' },
+  { id: 'how-to-start', label: 'איך מתחילים', href: '#how-to-start' },
   { id: 'academic', label: 'מחקר', href: '#academic' },
   { id: 'lectures', label: 'הרצאות', href: '#lectures' },
   { id: 'contact', label: 'יצירת קשר', href: '#contact' },

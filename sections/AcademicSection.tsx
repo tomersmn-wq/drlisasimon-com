@@ -1,69 +1,101 @@
 import ScrollSection from '@/components/ScrollSection'
 
 export default function AcademicSection() {
+  const publications = [
+    {
+      authors: 'Simon, L., Levi, S., Shapira, S., & Admon, R.',
+      year: '2024',
+      title: 'Stress-induced increase in heart-rate during sleep as an indicator of PTSD risk among combat soldiers.',
+      journal: 'Sleep',
+    },
+    {
+      authors: 'Simon, L., & Admon, R.',
+      year: '2023',
+      title: 'From childhood adversity to latent stress vulnerability in adulthood: the mediating roles of sleep disturbances and HPA axis dysfunction.',
+      journal: 'Neuropsychopharmacology',
+      volume: '48(10)',
+      pages: '1425–1435',
+    },
+    {
+      authors: 'Simon, L., Rab, S., Goldstein, P., Magal, N., & Admon, R.',
+      year: '2022',
+      title: 'Multi-trajectory analysis uncovers latent association between psychological and physiological acute stress response patterns.',
+      journal: 'Psychoneuroendocrinology',
+    },
+    {
+      authors: 'Simon, L., Jiryis, T., & Admon, R.',
+      year: '2021',
+      title: 'Now or later? Stress-induced increase and decrease in choice impulsivity are both associated with elevated affective and endocrine responses.',
+      journal: 'Brain Sciences',
+      volume: '11(9)',
+      pages: '1148',
+    },
+    {
+      authors: 'Rab, S. L., Simon, L., Bar-On, A., Richter-Levin, G., & Admon, R.',
+      year: '2024',
+      title: 'Behavioural profiling following acute stress uncovers associations with future stress sensitivity and past childhood abuse.',
+      journal: 'European Journal of Psychotraumatology',
+      volume: '15(1)',
+      pages: '2420554',
+    },
+    {
+      authors: 'Magal, N., Rab, S., Goldstein, P., Simon, L., Jiryis, T., & Admon, R.',
+      year: '2022',
+      title: 'Predicting chronic stress among healthy females using daily-life physiological and lifestyle features from wearable sensors.',
+      journal: 'Chronic Stress',
+    },
+  ]
+
   return (
     <ScrollSection id="academic" className="bg-primary/30">
       <div className="space-y-10">
         <h2 id="academic-heading" className="text-4xl md:text-5xl font-bold text-text-dark text-center">
-          מחקר אקדמי
+          מחקר
         </h2>
 
-        <div className="space-y-8 mt-12">
-          <p className="text-base md:text-lg text-foreground text-center max-w-3xl mx-auto">
-            המחקר שלי מתמקד בהבנת תהליכים פסיכולוגיים ויעילות טיפולית במגוון הקשרים קליניים. אני חוקרת נושאים הקשורים לחרדה, דיכאון, טראומה ותהליכי שינוי טיפולי.
-          </p>
+        <div className="grid md:grid-cols-3 gap-10 mt-12">
+          {/* Research Text */}
+          <div className="md:col-span-2 space-y-8 order-1">
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              לצד עבודתי הקלינית, אני עוסקת במחקר אקדמי בתחום הסטרס, הטראומה וההחלמה. כיום אני פוסט־דוקטורנטית באוניברסיטת חיפה, במעבדה לחקר התודעה והעצמי בראשות פרופ׳ רועי סלומון.
+            </p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              עבודתי המחקרית מתמקדת בהבנת האופן שבו הגוף והנפש מגיבים למצבי סטרס וטראומה, ובזיהוי גורמים המבחינים בין תגובות המאפשרות התאוששות והחלמה לבין כאלה שעלולות להפוך לכרוניות.
+            </p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              כיום אני מובילה שני פרויקטי מחקר מרכזיים:
+              <br />
+              האחד בוחן את השפעת הטראומה מאירועי ה־7 באוקטובר על שורדי המסיבה;
+              <br />
+              והשני עוסק בחקר הבסיס הפיזיולוגי של טיפולים חדשניים המשלבים חומרים משני תודעה, כגון MDMA ופסילוסיבין, יחד עם פסיכותרפיה, למצבים כמו PTSD ודיכאון עמיד לטיפול, במסגרת מחקרים קליניים בלבד.
+            </p>
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              העיסוק המחקרי מלווה את עבודתי הקלינית ומאפשר לי להישאר מחוברת לידע עדכני ולהעמקה בהבנת תהליכי טראומה והחלמה, לצד המפגש הטיפולי עצמו.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl md:text-3xl font-semibold text-accent mb-6">תחומי מחקר</h3>
-              <ul className="space-y-4 text-base text-foreground" role="list">
-                <li className="flex items-start gap-3">
-                  <span className="text-accent mt-1 text-xl" aria-hidden="true">•</span>
-                  <span>יעילות של טיפולים קוגניטיביים התנהגותיים</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent mt-1 text-xl" aria-hidden="true">•</span>
-                  <span>תהליכי שינוי במהלך פסיכותרפיה</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent mt-1 text-xl" aria-hidden="true">•</span>
-                  <span>התערבויות מבוססות מיינדפולנס</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-accent mt-1 text-xl" aria-hidden="true">•</span>
-                  <span>גורמי סיכון וחוסן במצבי משבר</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 md:p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl md:text-3xl font-semibold text-accent mb-6">פרסומים נבחרים</h3>
-              <div className="space-y-5 text-base text-foreground">
-                <div>
-                  <p className="font-semibold">סיימון, ל. (2024)</p>
-                  <p className="text-sm italic mt-1">יעילות טיפול CBT בקרב מבוגרים עם הפרעת חרדה כללית</p>
-                </div>
-                <div>
-                  <p className="font-semibold">סיימון, ל. ושות׳ (2023)</p>
-                  <p className="text-sm italic mt-1">תהליכי שינוי במיינדפולנס: מחקר אורך</p>
-                </div>
-                <div>
-                  <p className="font-semibold">סיימון, ל. (2022)</p>
-                  <p className="text-sm italic mt-1">חוסן פסיכולוגי בעידן המשברים</p>
-                </div>
+          {/* Publications Section */}
+          <div className="space-y-6 order-2">
+            <h3 id="publications-heading" className="text-xl md:text-2xl font-semibold text-text-dark mb-4 text-center">
+              פרסומים מדעיים
+            </h3>
+            <div className="bg-white p-6 rounded-lg shadow-md max-h-[400px] overflow-y-auto" dir="ltr">
+              <div className="space-y-5">
+                {publications.map((pub, index) => (
+                  <div key={index} className={`pb-5 ${index < publications.length - 1 ? 'border-b border-gray-300' : ''}`}>
+                    <p className="text-base text-foreground leading-relaxed text-left">
+                      {pub.authors} ({pub.year}).
+                      <br />
+                      {pub.title}
+                      {pub.volume && ` ${pub.volume}`}
+                      {pub.pages && `, ${pub.pages}`}.
+                      <br />
+                      <span className="italic">{pub.journal}</span>.
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-
-          <div className="mt-10 w-full h-64 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center text-gray-500" role="img" aria-label="מקום לגרפים או תמונה מחקרית">
-            [גרפים או תמונה מחקרית]
-          </div>
-
-          <div className="bg-white p-6 md:p-8 rounded-lg shadow-md mt-10">
-            <h3 className="text-2xl md:text-3xl font-semibold text-accent mb-5">שיתופי פעולה אקדמיים</h3>
-            <p className="text-base md:text-lg text-foreground">
-              אני משתפת פעולה עם חוקרים מאוניברסיטאות מובילות בארץ ובעולם, ומשתתפת בפרויקטי מחקר בין-תחומיים. כמו כן, אני פעילה בהכשרת דור עתיד של פסיכולוגים קליניים באמצעות הנחיית סטודנטים ודוקטורנטים.
-            </p>
           </div>
         </div>
       </div>

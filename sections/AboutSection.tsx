@@ -24,18 +24,18 @@ export default function AboutSection() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-10 mt-12">
-          <div className="md:col-span-2 space-y-6">
-            <p className="text-base md:text-lg text-foreground">
-              ד״ר ליסה סיימון היא פסיכולוגית קלינית בעלת ניסיון רב בתחום הפסיכותרפיה והמחקר. היא בעלת דוקטורט בפסיכולוגיה קלינית מאוניברסיטת תל אביב, והשלימה התמחות מתקדמת בטיפול קוגניטיבי התנהגותי.
+          <div className="md:col-span-2 space-y-8">
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              אני ליסה סיימון, פסיכולוגית בהתמחות קלינית, בעלת ניסיון בעבודה טיפולית ובמחקר. אני בעלת דוקטורט בנוירופסיכולוגיה קלינית מאוניברסיטת חיפה, ועוסקת בטיפול פסיכולוגי במבוגרים בקליניקה פרטית בצפון תל אביב.
             </p>
-            <p className="text-base md:text-lg text-foreground">
-              במהלך הקריירה שלה, ד״ר סיימון עבדה עם מגוון רחב של אוכלוסיות ומצבים קליניים, כולל עבודה במרכזים לבריאות הנפש, בתי חולים, ומסגרות פרטיות. היא משלבת בעבודתה את הידע האקדמי העדכני ביותר עם גישה אנושית וחמה.
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              במהלך השנים עבדתי עם מגוון רחב של אוכלוסיות ומצבים קליניים, במסגרת קליניקה פרטית, שירותי ייעוץ פסיכולוגיים, מרפאות לבריאות הנפש ובתי חולים. בעבודתי אני משלבת ידע אקדמי ומחקרי עדכני עם גישה אנושית, קשובה ומכבדת, תוך התאמה לצרכים הייחודיים של כל אדם.
             </p>
-            <p className="text-base md:text-lg text-foreground">
-              ד״ר סיימון פעילה גם בתחום המחקר האקדמי, ומתמחה במחקרים על יעילות טיפולית, פסיכופתולוגיה, ותהליכי שינוי טיפולי. מחקריה פורסמו בכתבי עת מובילים בתחום.
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              לצד העבודה הקלינית, אני פעילה גם בתחום המחקר האקדמי. עבודתי מתמקדת בהבנת תגובות לסטרס ולטראומה, ובקשר בין תהליכים פיזיולוגיים, רגשיים והתנהגותיים. מחקריי פורסמו בכתבי עת מדעיים מובילים בתחום הפסיכולוגיה והנוירופסיכולוגיה הקלינית.
             </p>
-            <p className="text-base md:text-lg text-foreground">
-              בנוסף לעבודתה הקלינית והאקדמית, ד״ר סיימון נותנת הרצאות והדרכות לאנשי מקצוע ולקהל הרחב בנושאים הקשורים לבריאות הנפש ורווחה פסיכולוגית.
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
+              בנוסף, אני עוסקת בהעברת הרצאות והדרכות מקצועיות בעברית ובאנגלית, לאנשי מקצוע ולקהלים שונים, בנושאים הקשורים לבריאות הנפש, סטרס, טראומה ותהליכי החלמה.
             </p>
           </div>
 
@@ -45,19 +45,19 @@ export default function AboutSection() {
               <ul className="space-y-3 text-base text-foreground" role="list">
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>דוקטורט בפסיכולוגיה קלינית</span>
+                  <span>דוקטורט (PhD) בנוירופסיכולוגיה קלינית, אוניברסיטת חיפה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>רישיון לעסוק בפסיכולוגיה קלינית</span>
+                  <span>פסיכולוגית בהתמחות קלינית, בעלת רישיון מטעם משרד הבריאות</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>הסמכה בטיפול CBT</span>
+                  <span>הכשרה בגישות קוגניטיביות־התנהגותיות (CBT, ACT ומיינדפולנס)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>הסמכה בטיפול DBT</span>
+                  <span>הכשרה בטיפול דינמי קצר מועד</span>
                 </li>
               </ul>
             </div>
