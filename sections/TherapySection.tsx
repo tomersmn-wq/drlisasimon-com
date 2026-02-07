@@ -54,10 +54,6 @@ export default function TherapySection() {
             </p>
           </div>
         </div>
-
-        <div className="mt-12 w-full h-64 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center text-gray-500" role="img" aria-label="מקום לתמונת חדר טיפולים">
-          [תמונת חדר טיפולים]
-        </div>
       </div>
     </ScrollSection>
   )

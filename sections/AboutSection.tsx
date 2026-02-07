@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="flex justify-center mt-8 mb-12">
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full shadow-2xl overflow-hidden ring-4 ring-primary/30">
             <Image 
-              src="/images/lisa-profile.jpg"
+              src="/images/WhatsApp Image 2026-02-06 at 11.28.15.jpeg"
               alt="ד״ר ליסה סיימון - תמונת פרופיל"
               fill
               className="object-cover"

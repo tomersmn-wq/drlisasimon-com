@@ -44,18 +44,6 @@ export default function ContactSection() {
                   <p className="text-foreground">{CONTACT_INFO.address}</p>
                 </div>
               </div>
-
-              <div className="flex items-start gap-4 bg-white p-5 rounded-lg shadow-sm">
-                <div className="text-accent text-2xl" aria-hidden="true">🕐</div>
-                <div>
-                  <h3 className="font-semibold text-text-dark text-lg mb-1">שעות פעילות</h3>
-                  <p className="text-foreground">{CONTACT_INFO.hours}</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="w-full h-64 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center text-gray-500 mt-8" role="img" aria-label="מקום למפה">
-              [מפה]
             </div>
           </div>
 
