@@ -1,4 +1,5 @@
 import ScrollSection from '@/components/ScrollSection'
+import Image from 'next/image'
 
 export default function LecturesSection() {
   return (
@@ -36,8 +37,15 @@ export default function LecturesSection() {
           </div>
 
           <div className="space-y-6">
-            <div className="w-full h-64 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center text-gray-500" role="img" aria-label="מקום לתמונה מהרצאה">
-              [תמונה מהרצאה]
+            <div className="w-full rounded-lg shadow-lg overflow-hidden">
+              <Image 
+                src="/images/Gemini_Generated_Image_qt2cj9qt2cj9qt2c.png"
+                alt="תמונה מהרצאה - ד״ר ליסה סיימון מעבירה הרצאה"
+                width={3712}
+                height={1152}
+                className="w-full h-auto object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
 
             <div className="bg-accent/20 p-6 rounded-lg">
