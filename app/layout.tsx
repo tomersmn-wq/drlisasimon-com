@@ -3,6 +3,7 @@ import { Heebo } from "next/font/google";
 import "./globals.css";
 import { AccessibilityProvider } from "@/context/AccessibilityContext";
 import FontSizeControl from "@/components/FontSizeControl";
+import { Analytics } from "@vercel/analytics/next";
 
 const heebo = Heebo({
   variable: "--font-heebo",
@@ -37,6 +38,7 @@ export default function RootLayout({
           {children}
           <FontSizeControl />
         </AccessibilityProvider>
+        <Analytics />
       </body>
     </html>
   );
