@@ -45,19 +45,27 @@ export default function AboutSection() {
               <ul className="space-y-3 text-base text-foreground" role="list">
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>דוקטורט (PhD) בנוירופסיכולוגיה קלינית, אוניברסיטת חיפה</span>
+                  <span>פוסט-דוקטורט ב Cognitive Neuroscience, אונ׳ חיפה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>פסיכולוגית בהתמחות קלינית, בעלת רישיון מטעם משרד הבריאות</span>
+                  <span>דוקטורט (PhD) בנוירופסיכולוגיה קלינית, אונ׳ חיפה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>הכשרה בגישות קוגניטיביות־התנהגותיות (CBT, ACT ומיינדפולנס)</span>
+                  <span>תואר שני (MA) בהצטיינות בנוירופסיכולוגיה קלינית, אונ׳ חיפה</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>הכשרה בטיפול דינמי קצר מועד</span>
+                  <span>תואר ראשון (BSc) בהצטיינות בפסיכולוגיה וביולוגיה, אונ׳ ת״א</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span aria-hidden="true">•</span>
+                  <span>הסמכה לטיפול דינאמי קצר מועד</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span aria-hidden="true">•</span>
+                  <span>הסכמה לטיפול בMDMA ופסיכותרפיה ל PTSD (במחקרים קליניים בלבד)</span>
                 </li>
               </ul>
             </div>

@@ -1,4 +1,5 @@
 import ScrollSection from '@/components/ScrollSection'
+import { CONTACT_INFO } from '@/lib/config'
 
 export default function HomeSection() {
   return (
@@ -103,11 +104,20 @@ export default function HomeSection() {
               </div>
             </div>
 
-            {/* Tagline/Description */}
-            <div className="space-y-4 pt-2 lg:pt-4">
-              <p className="text-lg md:text-xl lg:text-lg xl:text-xl text-text-dark/70 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
-                מלווה אנשים במסע של צמיחה אישית והבנה עצמית עמוקה
-              </p>
+            {/* Contact Information */}
+            <div className="space-y-3 pt-2 lg:pt-4">
+              <div className="flex flex-col gap-2 text-lg md:text-xl lg:text-lg xl:text-xl text-text-dark/70 font-light leading-relaxed max-w-lg mx-auto lg:mx-0">
+                <a 
+                  href={`tel:${CONTACT_INFO.phone}`}
+                  className="hover:text-accent transition-colors"
+                  aria-label={`טלפון: ${CONTACT_INFO.phone}`}
+                >
+                  {CONTACT_INFO.phone}
+                </a>
+                <p>
+                  {CONTACT_INFO.address}
+                </p>
+              </div>
             </div>
           </div>
         </div>
