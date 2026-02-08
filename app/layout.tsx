@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   description: 'ד״ר ליסה סיימון - פסיכולוגית קלינית עם התמחות בטיפול פסיכולוגי למבוגרים. מרפאה פרטית, ניסיון אקדמי ומחקרי נרחב.',
   keywords: 'פסיכולוגית, טיפול פסיכולוגי, פסיכולוגית קלינית, ד״ר ליסה סיימון, מרפאה פרטית',
   authors: [{ name: 'Dr. Lisa Simon' }],
+  icons: {
+    icon: [{ url: "/icon.png", sizes: "512x512", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
+  },
   openGraph: {
     title: 'ד״ר ליסה סיימון | פסיכולוגית קלינית',
     description: 'פסיכולוגית קלינית עם ניסיון אקדמי ומחקרי נרחב',
