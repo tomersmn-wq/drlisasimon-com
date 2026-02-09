@@ -65,7 +65,7 @@ export default function AboutSection() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span aria-hidden="true">•</span>
-                  <span>הסכמה לטיפול בMDMA ופסיכותרפיה ל PTSD (במחקרים קליניים בלבד)</span>
+                  <span>הסמכה לטיפול בMDMA ופסיכותרפיה ל PTSD (במחקרים קליניים בלבד)</span>
                 </li>
               </ul>
             </div>
